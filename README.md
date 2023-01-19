@@ -1,4 +1,4 @@
-# dmenuEmoji
+# dmenu-emoji
 
 A simple script to search for emojis and copy them to the clipboard.
 
@@ -6,7 +6,7 @@ A simple script to search for emojis and copy them to the clipboard.
 
 ### Arch Linux
 
-`dmenuEmoji` is available in the AUR as [`dmenu-emoji`](https://aur.archlinux.org/packages/dmenu-emoji).
+`dmenu-emoji` is available in the AUR as [`dmenu-emoji`](https://aur.archlinux.org/packages/dmenu-emoji).
 
 ```bash
 yay -S dmenu-emoji
@@ -14,10 +14,10 @@ yay -S dmenu-emoji
 
 ### Other Linux distributions
 
-You can install `dmenuEmoji` from source:
+You can install `dmenu-emoji` from source:
 
 ```bash
-git clone https://github.com/shasherazi/dmenuEmoji.git
+git clone https://github.com/shasherazi/dmenu-emoji.git
 cd dmenuEmoji
 chmod +x dmenu-emoji
 sudo cp dmenu-emoji /usr/bin/
