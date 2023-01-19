@@ -2,6 +2,7 @@
 
 # default options
 length=10
+emoji-list-path=/usr/share/dmenu-emoji/emoji-list
 
 while getopts "l:" opt; do
     case $opt in
@@ -11,4 +12,4 @@ while getopts "l:" opt; do
     esac
 done
 
-cat emojiList | dmenu -i -l $length | awk '{print $1}' | tr -d '\n' | xclip -selection clipboard
+cat $emoji-list-path | dmenu -i -l $length | awk '{print $1}' | tr -d '\n' | xclip -selection clipboard
