@@ -1877,9 +1877,5 @@ emojiList = [
     ["🏴󠁧󠁢󠁷󠁬󠁳󠁿", "flag wales"],
 ]
 
-emojis = ""
-
 for emoji, emojiDescription in emojiList:
-    emojis += f"{emoji} {emojiDescription}\n"
-
-subprocess.run(["cat | dmenu -l 10"], input=emojis.encode(), shell=True)
+    print(emoji, emojiDescription)
