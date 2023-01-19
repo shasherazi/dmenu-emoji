@@ -1,4 +1,4 @@
-import subprocess
+#!/usr/bin/env python3
 
 emojiList = [
     ["😀", "grinning face"],
