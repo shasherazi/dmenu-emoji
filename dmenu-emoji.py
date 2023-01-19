@@ -1,3 +1,5 @@
+import subprocess
+
 emojiList = [
     ["😀", "grinning face"],
     ["😃", "grinning face with big eyes"],
@@ -1875,5 +1877,9 @@ emojiList = [
     ["🏴󠁧󠁢󠁷󠁬󠁳󠁿", "flag wales"],
 ]
 
+emojis = ""
+
 for emoji, emojiDescription in emojiList:
-    print(emoji, emojiDescription)
+    emojis += f"{emoji} {emojiDescription}\n"
+
+subprocess.run(["cat | dmenu -l 10"], input=emojis.encode(), shell=True)
